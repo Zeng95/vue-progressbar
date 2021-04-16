@@ -1,24 +1,28 @@
 # vue-progressbar
 
 # Table of Contents
+
 * [___Demo___](#demo)
 * [___Requirements___](#requirements)
 * [___Installation___](#installation)
 * [___Usage___](#usage)  
- * [___Constructor Options___](#constructor-options)
- * [___Implementation___](#implementation)
- * [___vue-router___](#vue-router)  
-   * [___meta options___](#vue--router-meta-options)  
+* [___Constructor Options___](#constructor-options)
+* [___Implementation___](#implementation)
+* [___vue-router___](#vue-router)  
+  * [___meta options___](#vue--router-meta-options)  
 * [___Methods___](#methods)
 * [___Examples___](#examples)
 * [___License___](#license)
 
 # Demo
+
 [___Demo___](http://hilongjw.github.io/vue-progressbar/index.html)
+
 # Requirements
-- [Vue.js](https://github.com/vuejs/vue) `1.x` or `2.x`  
+* [Vue.js](https://github.com/vuejs/vue) `1.x` or `2.x`  
 
 # Installation
+
 ```bash
 # npm
 $ npm install vue-progressbar
@@ -26,6 +30,7 @@ $ npm install vue-progressbar
 #yarn
 $ yarn add vue-progressbar
 ```
+
 # Usage
 
 main.js
@@ -57,7 +62,9 @@ new Vue({
 
 
 ```
+
 ## Constructor Options
+
 |key|description|default|options|
 |:---|---|---|---|
 | `color`|color of the progress bar|`'rgb(143, 255, 199)'`|`RGB` `HEX` `HSL` `HSV` `VEC`|
@@ -73,6 +80,7 @@ new Vue({
 ## Implementation
 
 App.vue
+
 ```html
 <template>
     <div id="app">
@@ -114,7 +122,9 @@ export default {
 }
 </script>
 ```
+
 ## vue-router
+
 ```js
 export default [
   {
@@ -134,6 +144,7 @@ export default [
   }
 ]
 ```
+
 ### vue-router meta options
 
 |call|modifier|argument|example|
@@ -141,9 +152,10 @@ export default [
 |color|`set`, `temp`|`string`|`{call: 'color', modifier: 'temp', argument: '#ffb000'}`|
 |fail|`set`, `temp`|`string`|`{call: 'fail', modifier: 'temp', argument: '#ffb000'}`|
 |location|`set`, `temp`|`string`|`{call: 'location', modifier: 'temp', argument: 'top'}`|
-|transition|`set`, `temp`|` object`|`{call: 'transition', modifier: 'temp', argument: {speed: '0.6s', opacity: '0.6s', termination: 400}}`|
+|transition|`set`, `temp`|`object`|`{call: 'transition', modifier: 'temp', argument: {speed: '0.6s', opacity: '0.6s', termination: 400}}`|
 
 # Methods
+
 |function|description|parameters|example|
 |:---|---|---|---|
 |start|start the progress bar loading|`N/A`|`this.$Progress.start()`|
@@ -167,7 +179,9 @@ export default [
 |parseMeta|parses progress meta data|`meta: object`|`this.$Progress.parseMeta(meta)`|
 
 # Examples
+
 Loading Data (vue-resource)
+
 ```html
 
 <script>
@@ -187,10 +201,12 @@ export default {
 </script>
 
 ```
+
 ---
 Accessing the progress bar externally through the vue instance (e.g. axios interceptors)
 
 **main.js**
+
 ```js
 // main.js from Usage section
 
@@ -200,7 +216,9 @@ export default new Vue({ // export the Vue instance
   ...App
 }).$mount('#app')
 ```
+
 **api-axios.js**
+
 ```js
 import axios from 'axios';
 import app from '../main'; // import the instance
@@ -221,7 +239,6 @@ instance.interceptors.response.use(response => {
 
 export default instance; // export axios instance to be imported in your app
 ```
-
 
 # License
 

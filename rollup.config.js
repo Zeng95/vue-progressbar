@@ -13,9 +13,9 @@ import buble from '@rollup/plugin-buble'
 const production = !process.env.ROLLUP_WATCH
 
 export default {
-  input: 'src/main.js',
+  input: 'src/index.js',
   output: {
-    file: 'dist/build.js',
+    file: 'dist/vue-progressbar.js',
     format: 'umd',
     name: 'VueProgressBar',
     sourcemap: true,

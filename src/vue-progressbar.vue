@@ -1,12 +1,7 @@
-<style>
-.__cov-progress {
-  opacity: 1;
-  z-index: 999999;
-}
-</style>
 <template>
   <div class="__cov-progress" :style="style"></div>
 </template>
+
 <script>
 const inBrowser = typeof window !== 'undefined'
 export default {
@@ -79,3 +74,10 @@ export default {
   },
 }
 </script>
+
+<style>
+.__cov-progress {
+  opacity: 1;
+  z-index: 999999;
+}
+</style>

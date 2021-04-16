@@ -239,6 +239,4 @@ function install (Vue, options = {}) {
     Vue.prototype.$Progress = Progress
 }
 
-export default {
-    install
-}
+export default { install }

@@ -1,6 +1,6 @@
 {
-  "name": "leo-vue-progressbar",
-  "version": "0.7.6",
+  "name": "zengtao-vue-progressbar",
+  "version": "0.7.7",
   "description": "A lightweight progress bar for vue",
   "main": "dist/vue-progressbar.js",
   "scripts": {

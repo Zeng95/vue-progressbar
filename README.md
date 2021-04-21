@@ -87,12 +87,15 @@ App.vue
         <!-- for example router view -->
         <router-view></router-view>
         <!-- set progressbar -->
-        <vue-progress-bar></vue-progress-bar>
+        <ProgressBar />
     </div>
 </template>
 
 <script>
+ import ProgressBar from 'zengtao-vue-progressbar/src/vue-progressbar'
+ 
 export default {
+  components: { ProgressBar },
   mounted () {
     //  [App.vue specific] When App.vue is finish loading finish the progress bar
     this.$Progress.finish()

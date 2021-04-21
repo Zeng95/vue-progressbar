@@ -25,10 +25,10 @@
 
 ```bash
 # npm
-$ npm install vue-progressbar
+$ npm install zengtao-vue-progressbar
 
 #yarn
-$ yarn add vue-progressbar
+$ yarn add zengtao-vue-progressbar
 ```
 
 # Usage
@@ -37,7 +37,7 @@ main.js
 
 ```javascript
 import Vue from 'vue'
-import VueProgressBar from 'vue-progressbar'
+import VueProgressBar from 'zengtao-vue-progressbar'
 import App from './App'
 
 const options = {
